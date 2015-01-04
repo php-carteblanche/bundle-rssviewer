@@ -1,0 +1,20 @@
+# any "tmp*" file or dir anywhere
+*tmp*
+
+# user defined files
+user/*
+*/user/*
+
+# the composer stuff
+vendor/*
+*/vendor/*
+composer.lock
+
+# this may be commented on the "dev" branch
+phpdoc/*
+
+# this may be commented on the "wip" branch
+dev/*
+
+# hack to allow keeping an empty directory
+!.gitkeep

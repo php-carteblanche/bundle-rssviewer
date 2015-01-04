@@ -1,0 +1,33 @@
+{
+    "name": "carte-blanche/bundle-rssviewer",
+    "type": "carte-blanche-bundle",
+    "description": "A bundle to build an RSS feeds browser",
+    "keywords": [ "carte blanche", "bundles" ],
+    "homepage": "http://github.com/php-carteblanche/bundle-rssviewer",
+    "license": "Apache-2.0",
+    "authors": [{
+        "name": "Les Ateliers Pierrot & contributors",
+        "email": "contact@ateliers-pierrot.fr",
+        "homepage": "http://www.ateliers-pierrot.fr/"
+    }],
+    "require": {
+        "atelierspierrot/web-syndication-analyzer": "1.*@dev",
+        "carte-blanche/core": "dev-master",
+        "carte-blanche/installer": "dev-master"
+    },
+    "autoload": { 
+        "psr-0": { "RssViewer": "src" },
+        "classmap": [ "src/RssViewer/Controller" ]
+    },
+    "repositories": [{
+        "type": "composer", "url": "http://packagist.ateliers-pierrot.fr/"
+    }],
+    "extra": {
+        "views": "src/RssViewer/views",
+        "carte-blanche-i18n": "i18n/rssviewer-i18n.csv",
+        "carte-blanche-configs": "config/rssviewer_config.ini",
+        "branch-alias": {
+            "dev-master": "0.1-dev"
+        }
+    }
+}
